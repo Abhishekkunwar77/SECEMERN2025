@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice-JavaScript</title>
+</head>
+<body>
+    <h1>My First</h1>
+    <h1>My Second</h1>
+    <input type="hidden" value="123">
+    <script>
+        var tags = document.getElementsByTagName("h1"); 
+        console.log(tags);
+        for(i=0;i<tags;i++){
+            console.log(tags[i].innerHTML);
+        }
+        tags = document.getElementsByTagName("input"); 
+        console.log(tags);
+    </script>
+</body>
+</html>
