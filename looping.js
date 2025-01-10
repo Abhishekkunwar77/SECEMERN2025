@@ -25,3 +25,18 @@ for(let i of set){
     console.log(i)
 }
 console.log(set)
+var a=[10,20,30]
+var b={
+   "count":70,
+   "abs":1
+}
+for(let [i,j] of  Object.entries(b)){
+    console.log(i,j)
+}
+//  4 types of functions 
+//with parameters without return
+//with parameters with return
+//without parameters without return
+//without parameters with return
+
+
