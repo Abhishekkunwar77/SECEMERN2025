@@ -1,0 +1,16 @@
+ol {
+    /* mandatory*/
+    display: flex;
+    /*mandatory*/
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding:10px;
+    background-color: chocolate;
+    color: aliceblue;
+}
+.link:hover{
+    background-color:rgb(11, 247, 38);
+    color: rgb(252, 109, 6);
+    border-radius: 10px;
+}
