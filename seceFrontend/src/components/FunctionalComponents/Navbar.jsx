@@ -31,36 +31,53 @@ const Navbar = () => {
               Contact
             </Link>
           </li>
-          <div>
-            <span onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
-              Hooks
-            </span>
+          <div
+            onMouseEnter={toggleDropdown}
+            onMouseLeave={toggleDropdown}
+            className="dropdown"
+          >
+            <span className="link">Hooks</span>
             {dropdown && (
-              <ul>
+              <ul className="dropdown-list">
                 <li>
-                  <Link to="/use-state" target="_blank">
-                    useState
+                  <Link to="/use-state" className="dropdown-link">
+                    UseState
                   </Link>
                 </li>
-                <li>useEffect</li>
+                <li>
+                  <Link to="/use-effect" className="dropdown-link">
+                    UseEffect
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/use-api" className="dropdown-link">
+                    UseEffectAPI
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/use-ref" className="dropdown-link">
+                    UseRef
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/use-memo" className="dropdown-link">
+                    UseMemo
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/use-call" className="dropdown-link">
+                    UseCallback
+                  </Link>
+                </li>
               </ul>
             )}
           </div>
+
           <li>
-            <Link to="/use-state" className="link">
-              UseState
+            <Link to="/sign-up" className="link">
+              Signup
             </Link>
           </li>
-          <li>
-            <Link to='/use-effect' className="link">UseEffect</Link>
-          </li>
-          <li>
-            <Link to='/use-api' className="link">UseEffectAPI</Link>
-          </li>
-          <li>
-            <Link to="/sign-up" className="link">Signup </Link>
-          </li>
-
         </ol>
       </nav>
     </header>
