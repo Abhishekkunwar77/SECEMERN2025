@@ -1,37 +1,69 @@
-import { Link } from 'react-router-dom'
-import { useState } from 'react'
-import '../../css/Navbar.css'
-const Navbar = ({ onLogout }) => {
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import "../../css/Navbar.css";
 
-    var [dropdown, showDropdown] = useState(false)
-    const toggleDropdown=()=>{
-        showDropdown(dropdown=>!dropdown);
-    }
+const Navbar = () => {
+  var [dropdown, showDropdown] = useState(false);
+  const toggleDropdown = () => {
+    showDropdown((dropdown) => !dropdown);
+  };
+  return (
+    <header>
+      <nav>
+        <ol>
+          <li>
+            <Link to="/" className="link">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" className="link">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="/gallery" className="link">
+              Gallery
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" className="link">
+              Contact
+            </Link>
+          </li>
+          <div>
+            <span onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
+              Hooks
+            </span>
+            {dropdown && (
+              <ul>
+                <li>
+                  <Link to="/use-state" target="_blank">
+                    useState
+                  </Link>
+                </li>
+                <li>useEffect</li>
+              </ul>
+            )}
+          </div>
+          <li>
+            <Link to="/use-state" className="link">
+              UseState
+            </Link>
+          </li>
+          <li>
+            <Link to='/use-effect' className="link">UseEffect</Link>
+          </li>
+          <li>
+            <Link to='/use-api' className="link">UseEffectAPI</Link>
+          </li>
+          <li>
+            <Link to="/sign-up" className="link">Signup </Link>
+          </li>
 
-    return (
-        <header>
-            <nav>
-                <ol>
-                    <li><Link to='/' className="link">Home</Link></li>
-                    <li><Link to='/About' className="link">About</Link></li>
-                    <li><Link to='/Gallery' className="link" >Gallery</Link></li>
-
-                    <li><Link to='/Contact' className="link">Contact</Link></li>
-                    <div>
-                        <span onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>Hooks</span>
-                        {dropdown && (<ul>
-                            <li>useState</li>
-                            <li>useEffect</li>
-                        </ul>)}
-                    </div>
-                    <li><Link to='/UseState' className="link">UseState</Link></li>
-                    <li><Link to='/signUp' className="link">SignUp</Link></li>
-                    <li><Link to='/Login' className="link">Login</Link></li>
-
-                    <li><Link to='/' className="link" onClick={onLogout}>Logout</Link></li>
-                </ol>
-            </nav>
-        </header>)
-}
-
+        </ol>
+      </nav>
+    </header>
+  );
+};
 export default Navbar;

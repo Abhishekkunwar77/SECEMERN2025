@@ -15,7 +15,11 @@ function App() {
           <Route path='/about' element={<About />}></Route>
           <Route path='/gallery' element={<Gallery page="Gallery" img="SECE Logo" />}></Route>
           <Route path='/contact' element={<Contact />}></Route>
-          <Route path="/use=api" element ={<useEffectApi/>}> </Route>
+          <Route path="/use-effect" element ={<useEffect/>}> </Route>
+          <Route path="/use-api" element ={<useEffectApi/>}> </Route>
+          <Route path="/use-ref" element ={<UseRef/>}> </Route>
+          
+          <Route path="/sign-up" element ={<SignUp/>}> </Route>
         </Routes>
         <ClassCompEG />
       </section>
