@@ -6,7 +6,7 @@ import Navbar from "./components/FunctionalComponents/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Signup from "./components/FunctionalComponents/Signup";
 import UseState from "./components/FunctionalComponents/Hooks/UseState";
-import UseEffect from "./components/FunctionalComponents/Hooks/UseEffect";
+import UseEffect from "./components/FunctionalComponents/Hooks/useEffect";
 import UseEffectApi from "./components/FunctionalComponents/Hooks/UseEffectAPI";
 import UseRef from "./components/FunctionalComponents/Hooks/UseRef";
 import UseMemo from "./components/FunctionalComponents/Hooks/UseMemo";

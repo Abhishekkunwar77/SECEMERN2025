@@ -10,7 +10,7 @@ import Navbar from './components/FunctionalComponents/Navbar.jsx'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import Signup from './components/FunctionalComponents/Signup.jsx'
 import Usestate from './components/FunctionalComponents/Hooks/UseState.jsx'
-import UseEffect from './components/FunctionalComponents/Hooks/UseEffect.jsx'
+import UseEffect from './components/FunctionalComponents/Hooks/useEffect.jsx'
 import UseEffectApi from './components/FunctionalComponents/Hooks/UseEffectAPI.jsx'
 
 createRoot(document.getElementById('root')).render(
