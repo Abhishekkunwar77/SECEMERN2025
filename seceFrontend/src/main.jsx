@@ -16,7 +16,6 @@ import UseEffectApi from './components/FunctionalComponents/Hooks/UseEffectAPI.j
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-
     <Navbar/>
 <Routes>
     <Route path="/" element={<Signup/>}></Route>  

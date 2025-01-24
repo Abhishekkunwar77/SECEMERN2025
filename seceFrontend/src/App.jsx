@@ -23,6 +23,7 @@ function App() {
           element={<Gallery page="Gallery" img="SECE Logo" />}
         ></Route>
         <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/react-lifecycle-methods" element={<ReactLifecycleMethods />}></Route>
         <Route path="/use-state" element={<UseState />}></Route>
         <Route path="/use-effect" element={<UseEffect />}></Route>
         <Route path="/use-api" element={<UseEffectApi />}></Route>
