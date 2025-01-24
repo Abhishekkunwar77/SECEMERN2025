@@ -16,10 +16,12 @@ ol {
     background-color: aliceblue;
     color: chocolate;
     border-radius: 10px;
+   
   }
   .dropdown {
     position: relative;
     display: inline-block;
+    cursor:pointer;
   }
   .dropdown-list {
     display: block;
@@ -28,6 +30,7 @@ ol {
     padding: 5px;
     list-style-type: none;
     border-radius: 3px;
+    
   }
   .dropdown-link {
     text-decoration: none;
@@ -35,6 +38,7 @@ ol {
     padding: 5px 10px;
     display: block;
     border-radius: 3px;
+    cursor:pointer;
   }
   
   .dropdown-link:hover {
