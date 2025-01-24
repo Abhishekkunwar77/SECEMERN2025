@@ -1,3 +1,4 @@
+import About from './About'
 const Gallery = (sece) => {
   return (
     <div>

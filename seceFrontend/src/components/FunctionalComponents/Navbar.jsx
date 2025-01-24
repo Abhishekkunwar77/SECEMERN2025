@@ -40,6 +40,11 @@ const Navbar = () => {
             {dropdown && (
               <ul className="dropdown-list">
                 <li>
+                  <Link to="/react-lifecycle-methods" className="dropdown-link">
+                    Lifecycle
+                  </Link>
+                </li>
+                <li>
                   <Link to="/use-state" className="dropdown-link">
                     UseState
                   </Link>
@@ -69,10 +74,19 @@ const Navbar = () => {
                     UseCallback
                   </Link>
                 </li>
+                <li>
+                  <Link to="/use-context" className="dropdown-link">
+                    UseContext
+                  </Link>
+                </li>
               </ul>
             )}
           </div>
-
+          <li>
+            <Link to="/memo" className="link">
+              React.memo
+            </Link>
+          </li>
           <li>
             <Link to="/sign-up" className="link">
               Signup
