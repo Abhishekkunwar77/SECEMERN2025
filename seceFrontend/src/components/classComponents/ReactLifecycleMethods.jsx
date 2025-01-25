@@ -1,3 +1,4 @@
+
 import React from "react";
 class ReactLifecycleMethods extends React.Component {
   constructor() {
@@ -13,11 +14,13 @@ class ReactLifecycleMethods extends React.Component {
     console.log("Comp Mounted");
   }
   componentDidUpdate(prevProps,prevState){
+    console.log("Update");
     if(prevState.number !== this.state.number){
         console.log("Update Comp",prevState.number, this.state.number);
     }
   }
   componentWillUnmount(){
+    
     console.log("Comp Unmounted");
     this.setState({number:10000})
   }

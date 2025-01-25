@@ -1,11 +1,11 @@
-import CoE from "./CoE";
+import Faculty from "./Faculty";
 
-const Faculty = () =>{
+const Invigilator = () =>{
     return(
         <div>
-            <h4>Paper Correction is in Process</h4>
-            <CoE />
+            <h3>Invigilation in Done</h3>
+            <Faculty />
         </div>
     )
 }
-export default Faculty;
+export default Invigilator;

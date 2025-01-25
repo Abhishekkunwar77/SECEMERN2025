@@ -1,3 +1,4 @@
+
 import { memo } from "react";
 const UpdateNumber1 = ({ value }) => {
     console.log("Update number 1");
